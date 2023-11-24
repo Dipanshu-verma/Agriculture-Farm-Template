@@ -1,0 +1,36 @@
+img {
+    aspect-ratio: 1/1;
+  }
+  
+  .logos {
+    max-width: 100px;
+  }
+  
+  .logos li a {
+    transform: rotate(-45deg);
+  }
+  
+  .overlay {
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .active {
+    opacity: 1;
+    border-color:rgb(47, 117, 47);
+  }
+  
+  .active .overlay {
+    background-color: rgba(47, 117, 47, 0.406);
+  }
+  
+  .active ul {
+    opacity: 1;
+  }
+  
+  .active a {
+    color: #1f2937;
+  }

@@ -1,0 +1,11 @@
+.testimonial-box{
+    position:relative;
+    
+    background: url("../../assest/test-img.jpg");
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.card-test{
+    background: rgba(0, 0, 0, 0.450);
+}
+ 

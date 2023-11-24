@@ -1,0 +1,126 @@
+.nav-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(24, 231, 62);
+    transition: width 0.3s;
+  }
+  
+  .nav-item:hover::after {
+    width: 100%;
+  }
+  
+  .nav-item-hover {
+    position: relative;
+    overflow: hidden;
+  }
+  .nav-item-hover::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:rgb(2, 67, 15);
+    transition: width 0.3s;
+  }
+  
+  .nav-item-hover:hover::after {
+    width: 100%;
+  }
+  
+  .login-btn {
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+  .logo-img{
+    background-color:transparent;
+  }
+  .login-btn:hover {
+    background-color: white;
+    color: #001b54;
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(183, 203, 246, 0.5);
+  }
+  .hover-login-btn {
+    border: 1px solid var(--logo-color);
+    border-radius: 8px;
+    color: #001b54;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+  .hover-login-btn:hover {
+    background-color: var(--logo-color);
+    font-weight: 800;
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(2, 25, 77, 0.5);
+  }
+  
+  .scrolled {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .no-scrolled {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .nav-bg {
+    background-color: rgb(245, 243, 243);
+    color: var(--logo-color);
+  }
+  @media (max-width: 768px) {
+    .responsive-header {
+      height: 50px;
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (min-width: 1500px) {
+    .responsive-header {
+      height:70px;
+      padding-left: 2.5rem;
+      padding-right: 6rem;
+      
+    }
+   
+    .logo-img{
+      width: 240px;
+      height: 62px;
+      margin-bottom: 1rem;
+    }
+  .nav-text{
+    font-size: 20px;
+  }
+  
+  }
+  
+  @media (min-width: 1800px) {
+    .responsive-header {
+      height: 80px;
+      padding-left: 5rem;
+      padding-right: 9rem;
+      
+    }
+    .logo-img{
+      width: 280px;
+      height: 70px;
+      margin-bottom: 1.25rem;
+    }
+    .nav-text{
+      font-size: 28px;
+    }
+  
+  }
